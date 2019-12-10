@@ -28,13 +28,10 @@ import java.io.File;
 public class HelloWorldController {
 
     
-    //properties
+
     private String NAME;
 
 
-    /**
-     * default empty constructor
-     */
     public HelloWorldController(){
     }
 
@@ -46,8 +43,7 @@ public class HelloWorldController {
     public void setName(String name) {this.NAME = name;
     }
 
-    boolean[] bools = {
-    true,
+    boolean[] bools = {true,
     true,
            false
     };
