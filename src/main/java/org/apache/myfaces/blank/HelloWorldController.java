@@ -61,10 +61,9 @@ public class HelloWorldController {
     }
 
     private boolean nothing() {
-        boolean nothing;
         if (NAME.equals(null)) {
            return true;
         }
-        return nothing;
+        return true;
     }
 }
