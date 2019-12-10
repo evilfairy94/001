@@ -17,6 +17,9 @@
  * under the License.
 */
 package org.apache.myfaces.blank;
+import java.lang.Math;
+import java.io.File;
+
 
 /**
  * A typical simple backing bean, that is backed to <code>helloworld.jsp</code>
@@ -26,27 +29,42 @@ public class HelloWorldController {
 
     
     //properties
-    private String name;
-    
+    private String NAME;
+
+
     /**
      * default empty constructor
      */
     public HelloWorldController(){
     }
-    
+
+
     //-------------------getter & setter
-    public String getName() {
-        return name;
+    public String getNAME() {
+        return NAME;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String name) {this.NAME = name;
     }
-    
+
+    boolean[] bools = {
+    true,
+    true,
+           false
+    };
+
     /**
      * Method that is backed to a submit button of a form.
      */
     public String send(){
         //do real logic, return a string which will be used for the navigation system of JSF
         return "success";
+    }
+
+    private boolean nothing() {
+        boolean nothing;
+        if (NAME.equals(null)) {
+           return true;
+        }
+        return nothing;
     }
 }
